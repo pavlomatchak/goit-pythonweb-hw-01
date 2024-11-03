@@ -33,7 +33,7 @@ class Library(LibraryInterface):
     self.books = [book for book in self.books if book.title != title]
 
   def show_books(self):
-    if self.books.__len__() == 0:
+    if len(self.books) == 0:
       print('No books in library')
       return
 
